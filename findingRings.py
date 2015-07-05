@@ -150,7 +150,7 @@ def rngG(Grp): #Given a group we brute force search every possible ring on that 
         i+=1
 
     #Brute force search time
-
+    print "hi"
     itemize(Grp, er, tau)
     
 
@@ -162,8 +162,11 @@ Enoch = [[0,1,2,3],[1,0,3,2],[2,3,0,1],[3,2,1,0]]
 
 TestGroup3 = [[0,1,2],[1,2,0],[2,0,1]]
 
+TestGroup4 = [[0,1,2,3,4],[1,2,3,4,0],[2,3,4,0,1], [3,4,0,1,2],[4,0,1,2,3]]
 
-print rngG(TestGroup)
+
+if __name__=='__main__':
+    print rngG(Enoch)
 
 
 
